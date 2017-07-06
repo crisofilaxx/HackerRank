@@ -17,5 +17,16 @@ def test_remove():
     l.remove('algo')
     assert l.at(0) == 'banana'
     
+
+def test_append():
+    """append(e) insert e at the end of the list"""
+    l = Lists()
+    l.append('algo')
+    assert l.at(0) == 'algo'
+    l.append('banana')
+    assert l.at(1) == 'banana'
+    
+       
+    
        
     

@@ -15,6 +15,11 @@ class Lists():
     def remove(self, element):
         """remove first apperece of object """
         return self.list.remove(element) 
+
+    def append(self, element):
+        """append(e) insert e at the end of the list"""
+        self.list.append(element)
+        
         
         
 
