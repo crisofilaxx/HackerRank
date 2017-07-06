@@ -11,6 +11,10 @@ class Lists():
     def at(self, index):
         """object at 'index'"""
         return self.list[index]
+
+    def remove(self, element):
+        """remove first apperece of object """
+        return self.list.remove(element) 
         
         
 
