@@ -19,8 +19,7 @@ class Lists():
     def append(self, element):
         """append(e) insert e at the end of the list"""
         self.list.append(element)
-        
-        
-        
 
-        
+    def sort(self):
+        """append(e) insert e at the end of the list"""
+        self.list = sorted(self.list)

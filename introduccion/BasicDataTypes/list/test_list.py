@@ -26,3 +26,18 @@ def test_append():
     l.append('banana')
     assert l.at(1) == 'banana'
 
+
+def test_sort():
+    """append(e) insert e at the end of the list"""
+    l = Lists()
+    l.append(5)
+    l.append(2)
+    l.append(1)
+    l.append(9)
+    l.append(4)
+    l.sort()
+    assert l.at(0) == 1
+    assert l.at(1) == 2
+    assert l.at(2) == 4
+    assert l.at(3) == 5
+    assert l.at(4) == 9
