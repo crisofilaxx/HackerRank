@@ -28,7 +28,7 @@ def test_append():
 
 
 def test_sort():
-    """append(e) insert e at the end of the list"""
+    """sort list"""
     l = Lists()
     l.append(5)
     l.append(2)
@@ -41,3 +41,13 @@ def test_sort():
     assert l.at(2) == 4
     assert l.at(3) == 5
     assert l.at(4) == 9
+
+
+def test_pop():
+    """pop the last element from the list"""
+    l = Lists()
+    l.append(2)
+    l.append(3)
+    l.append(5)
+    assert l.pop() == 5
+    assert l.pop() == 3

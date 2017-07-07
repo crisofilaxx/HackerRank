@@ -23,3 +23,7 @@ class Lists():
     def sort(self):
         """append(e) insert e at the end of the list"""
         self.list = sorted(self.list)
+
+    def pop(self):
+        """pop the last element from the list"""
+        return self.list.pop()
