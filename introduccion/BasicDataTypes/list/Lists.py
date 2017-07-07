@@ -27,3 +27,8 @@ class Lists():
     def pop(self):
         """pop the last element from the list"""
         return self.list.pop()
+
+    def reverse(self):
+        """reverse the orden of the list"""
+        self.list = sorted(self.list, reverse= True)
+

@@ -51,3 +51,14 @@ def test_pop():
     l.append(5)
     assert l.pop() == 5
     assert l.pop() == 3
+
+def test_reverse():
+    """reverse the orden of the list"""
+    l = Lists()
+    l.append(2)
+    l.append(3)
+    l.append(5)
+    l.reverse()
+    assert l.at(0) == 5
+    assert l.at(1) == 3
+    
