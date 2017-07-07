@@ -52,6 +52,17 @@ def test_pop():
     assert l.pop() == 5
     assert l.pop() == 3
 
+
+def test_print(capsys):
+    """reverse the orden of the list"""
+    l = Lists()
+    l.append(2)
+    l.append(3)
+    l.append(5)
+    l.to_print()
+    stout, sterr = capsys.readouterr()
+    assert '[2, 3, 5]\n' == stout
+ 
 def test_reverse():
     """reverse the orden of the list"""
     l = Lists()
@@ -61,4 +72,4 @@ def test_reverse():
     l.reverse()
     assert l.at(0) == 5
     assert l.at(1) == 3
-    
+       
