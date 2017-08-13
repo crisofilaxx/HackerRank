@@ -4,35 +4,36 @@ class Lists():
         super(Lists, self).__init__()
         self.list = []
 
-    def insert(self, x, y):
+    def insert(self, *args):
         """insert(x,y) insert x at position y(int)"""
-        self.list.insert(y, x)
+        self.list.insert( *args)
 
-    def at(self, index):
+    def at(self, *args):
         """object at 'index'"""
-        return self.list[index]
+        return self.list[args[0]]
 
-    def remove(self, element):
+    def remove(self, *args):
         """remove first apperece of object """
-        return self.list.remove(element) 
+        self.to_print()
+        return self.list.remove(args[0]) 
 
-    def append(self, element):
+    def append(self, *args):
         """append(e) insert e at the end of the list"""
-        self.list.append(element)
+        self.list.append(args[0])
 
-    def sort(self):
+    def sort(self, *args):
         """append(e) insert e at the end of the list"""
         self.list = sorted(self.list)
 
-    def pop(self):
+    def pop(self, *args):
         """pop the last element from the list"""
         return self.list.pop()
 
-    def reverse(self):
+    def reverse(self, *args):
         """reverse the orden of the list"""
         self.list = sorted(self.list, reverse= True)
 
-    def to_print(self):
+    def to_print(self, *args):
         """print the list"""
         print(self.list)
         
