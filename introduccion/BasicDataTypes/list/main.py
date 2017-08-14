@@ -31,7 +31,7 @@ class Lists():
 
     def reverse(self, *args):
         """reverse the orden of the list"""
-        self.list = sorted(self.list, reverse= True)
+        self.list.reverse()
 
     def to_print(self, *args):
         """print the list"""
